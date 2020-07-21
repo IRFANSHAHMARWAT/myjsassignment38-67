@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<center>
+<body>
+
+    
+    <body>
+                                                     <!--  CHAPTER# 43-48 -->
+    
+        <!--1. Show an alert box on click on a link. -->
+        <p id="alert" onclick="alert('irfan shah)" >irfan shah</p>
+    <!-- 2. Display some Mobile images in browser. On click on an
+    image Show the message in alert to user. -->
+    
+    <div>
+        <div>
+    <h2>Mobile phone lookup</h2>
+        </div>
+        <div>
+    <img onclick="alert('Thanks for Buying a phone for us')" src="https://i.gadgets360cdn.com/products/large/redmik30-db-2-520x800-1575967913.jpg" width="100px" height="200px" >
+    <img onclick="alert('Thanks for Buying a phone for us')" src="https://static.toiimg.com/thumb/msid-70733868,width-320,resizemode-4/Xiaomi-Redmi-8A.jpg"  width="100px" height="200px" >
+    <img  onclick="alert('Thanks for Buying a phone for us')" src="https://static.toiimg.com/thumb/msid-70549430,width-220,resizemode-4,imgv-6/Xiaomi-Redmi-Note-8.jpg" width="100px" height="200px">
+    <img  onclick="alert('Thanks for Buying a phone for us')" src="https://static.toiimg.com/thumb/msid-64270990,width-220,resizemode-4,imgv-4/Xiaomi-Mi-8.jpg" width="100px" height="200px">
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- 3. Display 10 student records in table and each row should contain a delete
+    button. If you click on a button to delete a record, entire row should be
+    deleted.  -->
+    
+    <table id="tables">
+     <tr>
+        <th>INDEX</th>
+        <th>NAME</th>
+        <th>CLASS</th>
+    </tr>
+    
+    <tr>
+     <td>0</td>
+     <td>irfan </td>
+     <td>20</td>
+    <td><button  onclick="del()">delete</button></td>
+    </tr>
+    
+    <tr>
+        <td>1</td>
+    <td>shah </td>
+    <td>9</td>
+    <td><button  onclick="del()">delete</button></td>
+    </tr>
+    
+    <tr>
+        <td>2</td>
+    <td>Rizwan </td>
+    <td>9</td>
+    <td><button  onclick="del()">delete</button></td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>3</td>
+        <td>imran </td>
+        <td>14</td>
+       <td><button  onclick="del()">delete</button></td>
+       </tr>
+    
+       <tr>
+        <td>4</td>
+        <td>jibran </td>
+        <td>12</td>
+       <td><button  onclick="del()">delete</button></td>
+       </tr>
+    </table>
+    <!-- 
+    // 4. Display an image in browser. Change the picture on mouseover and set the
+    // first picture on mouseout. -->
+    
+    <div>
+    <img onmouseover="src='https://cf.ltkcdn.net/small-pets/images/std/259586-789x450-hamster_flowers.jpg'" onmouseout="src='https://eskipaper.com/images/cute-baby-seal-1.jpg" width="50%">
+    
+    </div>
+    
+    
+    
+    <!-- 5. Show a counter in browser. Counter should increase on click on increase
+    button and decrease on click on decrease button. And show updated counter
+     value in browser -->
+    
+    <button onclick="buttonClick()">increase</button>
+    <input type="text" id="inc" value="0"></input>
+    
+    
+    <button onclick="decreaseClick()">decrease</button>
+    <input type="text" id="dec" value="0"></input>
+    
+    <br><br><br><br>
+    
+                                                                 <!-- CHAPTER# 49-52 -->
+    
+    <!--1.Create a signup form and display form data in your web
+    page on submission. -->
+
+
+    <form>
+        <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill this form to create your account</p>
+    
+        <label  for="email">Email</label>
+        <input id="user_input" type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="password">Password</label>
+        <input  id="pass" type="password" placeholder="Enter Password" name="password" required>
+        
+        <label for="Repeat">Repeat Password</label>
+        <input id="rep" type="password" placeholder="Repeat Password" name="Repeat password" required>
+        
+        
+          <div class="btn">
+            <button onclick="#" type="button" class="cancelbtn" style="background-color: rgba(255, 0, 0, 0.795); color: white;">Cancel</button>
+            <button onclick="getValue()" type="submit"  class="signupbtn" style="background-color: rgba(0, 128, 0, 0.699); color: white;">Sign Up</button>
+          <br>
+            <p><span id='display'></span></p>
+            <p id='display'></p>
+            <p id='display'></p>
+        </div>
+    </div>
+    </form>
+    
+    
+    
+    
+    
+    <!-- 2. Suppose in your webpage there is content area in which
+    you have entered your item details, but user can only see
+    some details on first look. When user clicks on “Read
+    more” button, full detail of that particular item will be
+    displayed.-->
+
+    
+    <p id="para">
+        Men go abroad to wonder at the heights of mountains, at the huge waves of the sea, at the long courses of the rivers, at the vast compass of the ocean, at the circular motions of the stars, and they pass by themselves without wondering.
+        <a href="javascript:void(0);" onClick="morePara()"><em>Read more</em></a>
+        </p>
+    
+    
+    
+        <!-- 3. In previous assignment you have created a tabular data
+    using javascript. Let’s modify that. Create a form which
+    takes student’s details and show each student detail in
+    table. Each row of table must contain a delete button and
+    an edit button. On click on delete button entire row should
+    be deleted. On click on edit button, a hidden form will
+    appear with the values of that row. -->
+    
+    
+    
+    <div id="wrapper">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+        <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+        </tr>
+        
+        <tr id="row1">
+        <td id="name_row1">sohail</td>
+        <td id="country_row1">pakistan</td>
+        <td id="age_row1">21</td>
+        <td>
+        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+        </tr>
+        
+        <tr id="row2">
+        <td id="name_row2">Shazaib</td>
+        <td id="country_row2">karachi</td>
+        <td id="age_row2">20</td>
+        <td>
+        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+        </td>
+        </tr>
+        
+        <tr id="row3">
+        <td id="name_row3">zahid</td>
+        <td id="country_row3">pakistan</td>
+        <td id="age_row3">30</td>
+        <td>
+        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+        </td>
+        </tr>
+        
+        <tr>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_country"></td>
+        <td><input type="text" id="new_age"></td>
+        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+        </tr>
+        
+        </table>
+        
+        
+                                                                                 <!-- CHAPTER # 58-67 -->
+    
+                      <!--  1. Consider you have following code snippet:
+                       (Copy it in your HTML file) -->
+
+
+    
+                       <div>
+                        <h1> DOM </h1>
+                        <div id=”form-content” class=”content”>
+                        <label for=”first-name”>First Name</label>
+                        <input type=”text” id=”first-name” />
+                        <label for=”last-name”>Last Name</label>
+                        <input type=”text” id=”last-name” />
+                        <label for=”email”>Email</label>
+                        <input type=”text” id=”email” />
+                        </div>
+                        <div id=”main-content” class=”content”>
+                        <p class=”render”> First Name : gul khan</p>
+                        <p class=”render” id=”lastName”>Last Name: jan</p>
+                        <p class=”render”> Email : ismarwat@gmail.com</p>
+                        <p class=”render”> Country : Pakistan </p>
+                        <p class=”render”> contact : +92 312 3371594</p>
+                        </div>
+                        </div>
+    </body></center>
+    <script src="app.js"></script>
+
+</html>
